@@ -8,7 +8,7 @@ RSS_FEED_URL = "https://news.google.com/rss/search?q=trending+movies+2026&hl=en-
 BLOG_LABEL = "Trending Movies"
 
 genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-model = genai.GenerativeModel('gemini-3.5-flash')
+model = genai.GenerativeModel('gemini-3.6-flash')
 
 creds = Credentials(
     token=None,
