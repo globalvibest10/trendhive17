@@ -68,7 +68,7 @@ Original Description: {description}
     }
     try:
         posts = blogger_service.posts()
-        posts.insert(blogId=BLOG_ID, body=post_body, isDraft=True).execute()
+        posts.insert(blogId=BLOG_ID, body=post_body, isDraft=False).execute()
         print(f"Posted draft: {new_title}")
     except Exception as e:
         print(f"Blogger error: {e}")
