@@ -1,4 +1,4 @@
-name: Daily Auto-Post to Blogger
+name: Movies Auto-Post Every 24 Hours
 
 on:
   schedule:
@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run the publishing script
+      - name: Run the movies publishing script
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           BLOGGER_CLIENT_ID: ${{ secrets.BLOGGER_CLIENT_ID }}
